@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FinalExamProject</string>
+    <string name="name" />
+    <string name="email" />
+    <string name="password" />
+    <string name="signup" />
+    <string name="login" />
+    <string name="food_name" />
+    <string name="food_price" />
+    <string name="food_quantity" />
+    <string name="food_description" />
+    <string name="restaurant_name" />
+    <string name="restaurant_location" />
+</resources>

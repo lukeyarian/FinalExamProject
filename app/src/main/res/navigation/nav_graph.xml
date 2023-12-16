@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.finalexamproject.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_restaurantFragment"
+            app:destination="@id/restaurantFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/restaurantFragment"
+        android:name="com.example.finalexamproject.RestaurantFragment"
+        android:label="Restaurant Details"
+        tools:layout="@layout/fragment_restaurant">
+        <action
+            android:id="@+id/action_restaurantFragment_to_checkoutFragment"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.example.finalexamproject.CheckoutFragment"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_checkout" />
+
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.example.finalexamproject.OrdersFragment"
+        android:label="Orders"
+        tools:layout="@layout/fragment_orders" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.finalexamproject.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/calendarViewFragment"
+        android:name="com.example.finalexamproject.CalendarViewFragment"
+        android:label="Calendar View"
+        tools:layout="@layout/fragment_calendar_view" />
+
+</navigation>
