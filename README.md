@@ -36,6 +36,8 @@ The following **extensions** are implemented:
 ## Video Walkthrough
 
 ![finalExamProject](https://github.com/lukeyarian/FinalExamProject/assets/70252777/91759401-85d6-487f-9aa6-abc5c7137fe3)
+
+
 I ended up commenting out some code that would be needed for the inital main activity to launch. After not looking at it for a while, the implementation got a bit messy and I couldn't get the app to start anymore.
 
 ## Notes
