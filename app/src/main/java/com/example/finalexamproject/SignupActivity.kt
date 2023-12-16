@@ -29,8 +29,7 @@ class SignupActivity : AppCompatActivity() {
             return
         }
 
-        auth.createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener(this) { task ->
+        auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(baseContext, "Signup successful.", Toast.LENGTH_SHORT).show()
                 } else {

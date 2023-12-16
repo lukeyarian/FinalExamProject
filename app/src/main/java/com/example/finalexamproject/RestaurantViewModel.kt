@@ -11,13 +11,10 @@ class RestaurantViewModel : ViewModel() {
     val restaurants: LiveData<List<Restaurant>> = _restaurants
 
     fun fetchRestaurants() {
-        FirebaseUtil.firestore.collection("restaurants")
-            .get()
-            .addOnSuccessListener { documents ->
-                val restaurantList = documents.toObjects(Restaurant::class.java)
-                _restaurants.value = restaurantList
-            }
-            .addOnFailureListener {
+        FirebaseUtil.firestore.collection("restaurants").get().addOnSuccessListener { documents ->
+            val restaurantList = documents.toObjects(Restaurant::class.java)
+            _restaurants.value = restaurantList
+            }.addOnFailureListener {
                 _restaurants.value = listOf()
             }
     }

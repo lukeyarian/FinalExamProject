@@ -33,6 +33,7 @@ class CheckoutFragment : Fragment() {
 
     private fun getOrderItems(): List<OrderItem> {
         return listOf()
+        //
     }
 
     override fun onDestroyView() {

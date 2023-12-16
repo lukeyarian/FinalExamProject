@@ -44,10 +44,12 @@ class HomeFragment : Fragment() {
 
     private fun getRecentRestaurants(): List<Restaurant> {
         return listOf()
+        //
     }
 
     private fun getAllRestaurants(): List<Restaurant> {
         return listOf()
+        //
     }
 
     override fun onDestroyView() {

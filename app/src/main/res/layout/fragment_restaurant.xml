@@ -4,8 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!--Carousel -->
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/foodItemsRecyclerView"
         android:layout_width="match_parent"
